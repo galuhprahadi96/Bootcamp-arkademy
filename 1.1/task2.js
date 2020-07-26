@@ -1,7 +1,7 @@
-const matematika = 80;
 const bahasaIndonesia = 90;
 const bahasaInggris = 89;
 const ipa = 69;
+const matematika = 80;
 
 
 if (typeof bahasaIndonesia !== 'number') {

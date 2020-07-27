@@ -4,14 +4,8 @@ const bahasaInggris = 89;
 const ipa = 69;
 
 
-if (typeof bahasaIndonesia !== 'number') {
-    console.log('nilai bahasa indonesia belum diisi dan harus angka');
-} else if (typeof bahasaInggris !== 'number') {
-    console.log('nilai bahasa bahasaInggris belum diisi dan harus angka');
-} else if (typeof ipa !== 'number') {
-    console.log('nilai bahasa ipa belum diisi dan harus angka');
-} else if (typeof matematika !== 'number') {
-    console.log('nilai bahasa matematika belum diisi dan harus angka');
+if (typeof bahasaIndonesia !== 'number' || typeof bahasaInggris !== 'number' || typeof ipa !== 'number' || typeof matematika !== 'number') {
+    console.log('ada nilai yang belum diisi dan harus angka');
 } else {
 
     let hasil = (bahasaIndonesia + bahasaInggris + ipa + matematika) / 4

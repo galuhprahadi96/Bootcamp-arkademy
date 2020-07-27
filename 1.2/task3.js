@@ -12,13 +12,11 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, arrNilai) {
 
 // cari nilai
 function cariNilai(nilaiAwal, nilaiAkhir, arrNilai) {
-    let result = []
-
-    arrNilai.map(nilai => {
-        if (nilai >= nilaiAwal && nilai <= nilaiAkhir) {
-            result.push(nilai);
-        }
+    //filter
+    const result = arrNilai.filter(val => {
+        return val >= nilaiAwal && val <= nilaiAkhir
     })
+
     // sorting
     console.log(result.sort(function (a, b) { return a - b }));
 }

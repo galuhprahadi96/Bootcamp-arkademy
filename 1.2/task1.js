@@ -11,6 +11,6 @@ const filterData = arr.filter(val => {
 })
 // console.log(filterData);
 
-// 4. Push = menambah data ke dalam array
+// 3. Push = menambah data ke dalam array
 arr.push("Galuh", "Prahadi", "Gumelar");
 // console.log(arr);

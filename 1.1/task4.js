@@ -21,4 +21,4 @@ data = { ...data, name: "Galuh Prahadi Gumelar", email: "galuhprahadi96@gmail.co
 
 //B. Destructuring
 const { street, city } = data.address;
-// console.log(`${street}, ${city}`);
+console.log(`${street}, ${city}`);

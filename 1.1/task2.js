@@ -4,26 +4,18 @@ const ipa = 69;
 const matematika = 80;
 
 
-if (typeof bahasaIndonesia !== 'number') {
-    console.log('nilai bahasa indonesia belum diisi dan harus angka');
-} else if (typeof bahasaInggris !== 'number') {
-    console.log('nilai bahasa bahasaInggris belum diisi dan harus angka');
-} else if (typeof ipa !== 'number') {
-    console.log('nilai bahasa ipa belum diisi dan harus angka');
-} else if (typeof matematika !== 'number') {
-    console.log('nilai bahasa matematika belum diisi dan harus angka');
+if (typeof bahasaIndonesia !== 'number' || typeof bahasaInggris !== 'number' || typeof ipa !== 'number' || typeof matematika !== 'number') {
+    console.log('ada nilai yang belum diisi dan harus angka');
 } else {
-
     let hasil = (bahasaIndonesia + bahasaInggris + ipa + matematika) / 4
     console.log(`Rata-Rata = ${hasil}`);
 
     cekGrade(hasil);
-
 }
 
 /// Fungsi cek grade
 function cekGrade(hasil) {
-    if (hasil >= 90) {
+    if (hasil >= 90 && hasil <= 100) {
         console.log('Grade = A');
     } else if (hasil >= 80) {
         console.log('Grade = B');

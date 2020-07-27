@@ -36,4 +36,4 @@ const biodata = {
     interestInCoding: true
 };
 
-console.log(biodata.name);
+console.log(biodata);

@@ -5,6 +5,8 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, arrNilai) {
     } else if (arrNilai.length < 5) {
         return 'jumlah angka dalam dataArray tidak ada'
     } else {
+
+        // memanggil fungsi cari nilai dan mengirimkan 3 param
         cariNilai(nilaiAwal, nilaiAkhir, arrNilai);
     }
 }
@@ -12,7 +14,7 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, arrNilai) {
 
 // cari nilai
 function cariNilai(nilaiAwal, nilaiAkhir, arrNilai) {
-    //filter
+    //filter nilai
     const result = arrNilai.filter(val => {
         return val >= nilaiAwal && val <= nilaiAkhir
     })

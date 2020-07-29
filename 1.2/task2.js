@@ -11,7 +11,7 @@ function searchName(word, limit, callback) {
     ]
 
     // mencari data berdasarkan word dan membatasi jumlah data yang muncul
-    let search = name.filter(val => val.toLowerCase().includes(word)).slice(0, limit);;
+    let search = name.filter(val => val.toLowerCase().includes(word)).slice(0, limit);
 
     // kirim param ke function showName
     callback(search)

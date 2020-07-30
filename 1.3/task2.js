@@ -30,7 +30,7 @@ function showMonth(status, month) {
       console.log(val);
     });
   } else {
-    console.log(status);
+    console.log("Data Not Found");
   }
 }
 

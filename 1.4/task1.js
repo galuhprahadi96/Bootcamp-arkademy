@@ -1,4 +1,6 @@
-function reverseWord(word) {
+// Deteksi Palindrom
+
+function deteksiPalindrom(word) {
   // tampung data yang sudah di reverse
   let reverse = "";
 
@@ -15,4 +17,4 @@ function reverseWord(word) {
   }
 }
 
-reverseWord("Malam");
+deteksiPalindrom("Malam");

@@ -33,11 +33,11 @@
 
 1. implementasi code dari algoritma deteksi polindrom dan reverse word
 2. pembuatan aplikasi pembelian makanan sederhana dengan ketentuan :
-   - Dimana terdapat 2 buah kode promo:
+   1. Dimana terdapat 2 buah kode promo:
    * Promo ‘ARKAFOOD5’ dengan ketentuan pemesanan minimal 50rb akan mendapat diskon 50%, dengan maksimal potongan sebesar 50rb.
    * Promo ‘DITRAKTIRDEMY’ dengan ketentuan pemesanan minimal 25rb akan mendapatkan diskon 60%, dengan maksimal potongan sebesar 30rb.
    * Jika tidak menggunakan kode promo ‘false’
-   - Biaya order :
+   2. Biaya order :
    * Untuk pengiriman sejauh 2km pertama akan dikenakan tarif 5rb, dan setiap satu kilometer selanjutnya dikenakan penambahan 3rb.
-   - Pajak :
+   3. Pajak :
    * Untuk beberapa restoran dikenakan pajak yakni 5% dari harga makanan yang dipesan (true), jika tidak dikenakan pajak (false).

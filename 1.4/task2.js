@@ -13,7 +13,7 @@ function arkFood(harga, voucher, jarak, pajak) {
   `);
 }
 
-// hitung biayaOrder
+// hitung biaya antar
 function biayaOrder(jarak) {
   let biaya;
 
@@ -59,7 +59,7 @@ function diskon(voucher, harga) {
     diskon = (harga * 60) / 100;
     return diskon;
   } else {
-    diskon = harga;
+    diskon = 0;
     return diskon;
   }
 }

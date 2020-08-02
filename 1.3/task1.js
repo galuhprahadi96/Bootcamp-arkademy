@@ -15,10 +15,12 @@ const cekHariKerja = (day) => {
   });
 };
 
-// // then catch
+// then catch
 // cekHariKerja("minggu")
 //   .then((result) => console.log(result))
 //   .catch((error) => console.log(error));
+
+// then dan catch digunakan untuk menangkap hasil dari promise dimana then akan menangkap nilai dari resolve dan catch digunakan untuk menangkap nilai reject
 
 // try catch
 async function cek(day) {

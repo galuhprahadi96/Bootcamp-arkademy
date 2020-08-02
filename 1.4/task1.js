@@ -10,11 +10,11 @@ function deteksiPalindrom(word) {
   }
 
   // pencocokan data
-  if (word.toLowerCase() == reverse.toLowerCase()) {
+  if (word == reverse) {
     console.log("Palindrom");
   } else {
     console.log("Bukan Palindrom");
   }
 }
 
-deteksiPalindrom("Malam");
+deteksiPalindrom("malam");

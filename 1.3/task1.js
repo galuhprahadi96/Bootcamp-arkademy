@@ -31,5 +31,6 @@ async function cek(day) {
     console.log(error);
   }
 }
+// try dan catch biasanya digunakan untuk menghandle error pada async await
 
 cek("minggu");

@@ -15,53 +15,60 @@ function arkFood(harga, voucher, jarak, pajak) {
 
 // hitung biaya antar
 function biayaOrder(jarak) {
-  let biaya;
+  let biaya = 0;
 
   // biaya jarak tempuh 2 km
   if (jarak == 2) {
     biaya = 5000;
-    return biaya;
   } else if (jarak > 2) {
     // biaya jarak tempuh lebih dari 2 km
     biaya = (jarak - 2) * 3000 + 5000;
-    return biaya;
   } else {
-    // biaya jarak tempuh
+    // biaya jarak tempuh per km
     biaya = 3000;
-    return biaya;
   }
+  return biaya;
 }
 
 // pajakResto
 function pajakResto(harga, pajak) {
-  let pjResto;
+  let pjResto = 0;
   // bila dikenakan pajak
   if (pajak === true) {
     pjResto = (harga * 5) / 100;
-    return pjResto;
   } else {
     // jika tidak
-    pjResto = 0;
-    return pjResto;
+    pjResto;
   }
+  return pjResto;
 }
 
 // diskon
 function diskon(voucher, harga) {
   // diskon
-  let diskon;
+  let diskon = 0;
 
   // cek voucher
   if (voucher == "ARKAFOOD5") {
     diskon = (harga * 50) / 100;
-    return diskon;
+    // cek apakah diskon lebih dari 50000
+    if (diskon > 50000) {
+      diskon = 50000;
+    } else {
+      diskon;
+    }
   } else if (voucher == "DITRAKTIRDEMY") {
     diskon = (harga * 60) / 100;
-    return diskon;
+    // cek apakah diskon lebih dari 30000
+    if (diskon > 30000) {
+      diskon = 30000;
+    } else {
+      diskon;
+    }
   } else {
     diskon = 0;
-    return diskon;
   }
+  return diskon;
 }
 
 arkFood(75000, "ARKAFOOD5", 5, true);

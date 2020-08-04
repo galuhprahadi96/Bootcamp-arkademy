@@ -16,13 +16,14 @@ function arkFood(harga, voucher, jarak, pajak) {
 // hitung biaya antar
 function biayaOrder(jarak) {
   let biaya = 0;
-
+  let biayaMin = 5000;
+  let jarakMin = 2;
   // biaya jarak tempuh 2 km
-  if (jarak == 2) {
-    biaya = 5000;
+  if (jarak == jarakMin) {
+    biaya = biayaMin;
   } else if (jarak > 2) {
     // biaya jarak tempuh lebih dari 2 km
-    biaya = (jarak - 2) * 3000 + 5000;
+    biaya = (jarak - jarakMin) * 3000 + biayaMin;
   } else {
     // biaya jarak tempuh per km
     biaya = 3000;
@@ -71,4 +72,4 @@ function diskon(voucher, harga) {
   return diskon;
 }
 
-arkFood(50000, "ARKAFOOD5", 5, true);
+arkFood(75000, "ARKAFOOD5", 5, true);

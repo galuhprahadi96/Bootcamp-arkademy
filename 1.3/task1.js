@@ -34,3 +34,5 @@ async function cek(day) {
 cek("selasa");
 
 // try dan catch biasanya digunakan untuk menghandle error pada async await
+// try digunakan untuk mencoba/mengecek error kode
+// catch menangkap error yang mungkin terjadi pada try

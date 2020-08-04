@@ -19,18 +19,18 @@ const cekHariKerja = (day) => {
 cekHariKerja("senin")
   .then((result) => console.log(result))
   .catch((error) => console.log(error));
+// then dan catch digunakan untuk menangkap hasil dari promise dimana then akan menangkap nilai dari resolve dan catch digunakan untuk menangkap nilai reject
 
 // try catch
-// async function cek(day) {
-//   try {
-//     const result = await cekHariKerja(day);
-//     console.log(result);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+async function cek(day) {
+  try {
+    const result = await cekHariKerja(day);
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
 
-// cek("senin");
+cek("selasa");
 
-// then dan catch digunakan untuk menangkap hasil dari promise dimana then akan menangkap nilai dari resolve dan catch digunakan untuk menangkap nilai reject
 // try dan catch biasanya digunakan untuk menghandle error pada async await

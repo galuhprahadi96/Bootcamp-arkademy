@@ -49,7 +49,7 @@ function diskon(voucher, harga) {
   let diskon = 0;
 
   // cek voucher
-  if (voucher == "ARKAFOOD5") {
+  if (voucher == "ARKAFOOD5" && harga >= 50000) {
     diskon = (harga * 50) / 100;
     // cek apakah diskon lebih dari 50000
     if (diskon > 50000) {
@@ -57,7 +57,7 @@ function diskon(voucher, harga) {
     } else {
       diskon;
     }
-  } else if (voucher == "DITRAKTIRDEMY") {
+  } else if (voucher == "DITRAKTIRDEMY" && harga >= 25000) {
     diskon = (harga * 60) / 100;
     // cek apakah diskon lebih dari 30000
     if (diskon > 30000) {
@@ -71,4 +71,4 @@ function diskon(voucher, harga) {
   return diskon;
 }
 
-arkFood(75000, "ARKAFOOD5", 5, true);
+arkFood(50000, "ARKAFOOD5", 5, true);
